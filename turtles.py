@@ -23,8 +23,19 @@ def draw_circle():
     carolyn.color("purple")
     carolyn.circle(150);
 
+def draw_triangle():
+    george = turtle.Turtle()
+    george.shape("arrow")
+    george.color("blue")
+
+    x = 0
+    while x < 3:
+        george.forward(150)
+        george.left(120)
+        x += 1
 
 draw_square()
 draw_circle()
+draw_triangle()
 screen.exitonclick()
 
