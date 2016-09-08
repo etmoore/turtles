@@ -1,8 +1,9 @@
 import turtle
 
+screen = turtle.Screen()
+screen.bgcolor("orange")
+
 def draw_square():
-    screen = turtle.Screen()
-    screen.bgcolor("orange")
 
     sheldon = turtle.Turtle()
     sheldon.shape("classic")
@@ -16,11 +17,14 @@ def draw_square():
         sheldon.right(90)
         x += 1
 
+def draw_circle():
     carolyn = turtle.Turtle()
     carolyn.shape("turtle")
     carolyn.color("purple")
     carolyn.circle(150);
 
-    screen.exitonclick()
 
 draw_square()
+draw_circle()
+screen.exitonclick()
+
