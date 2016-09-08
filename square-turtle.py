@@ -10,17 +10,11 @@ def draw_square():
     sheldon.pensize(4)
     sheldon.speed(5)
 
-    sheldon.forward(200)
-    sheldon.right(90)
-
-    sheldon.forward(200)
-    sheldon.right(90)
-
-    sheldon.forward(200)
-    sheldon.right(90)
-
-    sheldon.forward(200)
-    sheldon.right(90)
+    x = 0
+    while x < 4:
+        sheldon.forward(200)
+        sheldon.right(90)
+        x += 1
 
     screen.exitonclick()
 
