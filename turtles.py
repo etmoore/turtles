@@ -16,6 +16,11 @@ def draw_square():
         sheldon.right(90)
         x += 1
 
+    carolyn = turtle.Turtle()
+    carolyn.shape("turtle")
+    carolyn.color("purple")
+    carolyn.circle(150);
+
     screen.exitonclick()
 
 draw_square()
